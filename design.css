@@ -1,0 +1,961 @@
+.login_section {
+  background: #1e6262;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .login_section .login_container {
+    width: 40%;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black;
+    border-radius: 10px;
+    min-height: 300px; }
+    .login_section .login_container header {
+      width: 100%;
+      min-height: 12vh;
+      display: flex;
+      justify-content: center;
+      padding: 1.3em;
+      align-items: center;
+      flex-direction: column; }
+      .login_section .login_container header h1 {
+        color: #ffff;
+        padding: 7px 20px 7px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Segoe UI;
+        letter-spacing: 1px;
+        box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black; }
+    .login_section .login_container main {
+      width: 100%;
+      min-height: 25vh;
+      display: flex;
+      flex-direction: column; }
+      .login_section .login_container main .email {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: .9em .9em .2em .9em; }
+        .login_section .login_container main .email .mail {
+          border: none;
+          padding: .8em;
+          border-radius: 5px;
+          outline: none;
+          color: #ffff;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: #1e6262;
+          font-size: 16px;
+          font-family: Segoe UI;
+          font-weight: bold;
+          letter-spacing: 1px; }
+        .login_section .login_container main .email .warn-mail {
+          margin-left: 15px;
+          color: #550000;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .login_section .login_container main .email .mail::placeholder {
+          color: #ffff; }
+        .login_section .login_container main .email .mail:focus {
+          background-color: #f96d00;
+          color: #080707;
+          font-weight: bold;
+          color: #ffff; }
+      .login_section .login_container main .password {
+        flex: 1;
+        display: flex;
+        padding: .9em .9em .2em .9em;
+        flex-direction: column; }
+        .login_section .login_container main .password .pass {
+          border: none;
+          padding: .8em;
+          color: #ffff;
+          border-radius: 5px;
+          outline: none;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: #1e6262;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: Segoe UI;
+          letter-spacing: 1px; }
+        .login_section .login_container main .password .warn-pass {
+          margin-left: 15px;
+          color: #550000;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .login_section .login_container main .password .pass::placeholder {
+          color: #ffff; }
+        .login_section .login_container main .password .pass:focus {
+          background-color: #f96d00;
+          color: #080707;
+          font-weight: bold;
+          color: #ffff; }
+        .login_section .login_container main .password .div1 {
+          width: 11px;
+          height: 12px;
+          border-top: 2px solid blue;
+          border-left: 2px solid blue;
+          transform: rotate(45deg);
+          border-radius: 240px; }
+        .login_section .login_container main .password .div2 {
+          width: 20px;
+          border: 1px solid blue;
+          transform: rotate(45deg); }
+        .login_section .login_container main .password .div3 {
+          width: 8px;
+          height: 12px;
+          border: 1px solid transparent; }
+    .login_section .login_container footer {
+      width: 100%;
+      min-height: 20vh;
+      display: flex;
+      flex-direction: column; }
+      .login_section .login_container footer .forget {
+        flex: 1.5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px; }
+        .login_section .login_container footer .forget .check {
+          flex: 1;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .login_section .login_container footer .forget .check .remember {
+            margin-left: 20px; }
+          .login_section .login_container footer .forget .check label {
+            margin-left: 5px;
+            color: #ffff;
+            font-size: 14px;
+            font-family: Segoe UI; }
+        .login_section .login_container footer .forget .for-pass {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          .login_section .login_container footer .forget .for-pass a {
+            color: #f96d00;
+            font-family: Segoe UI;
+            font-size: 14px;
+            letter-spacing: 1px; }
+      .login_section .login_container footer .login {
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .login_section .login_container footer .login .sign {
+          font-size: 18px;
+          font-family: Segoe UI;
+          padding: 7px 15px 7px 15px;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          letter-spacing: 1px;
+          border: 2px solid #f96d00;
+          color: #f96d00;
+          border-radius: 10px;
+          cursor: pointer;
+          font-weight: bold;
+          background-color: #1e6262;
+          outline: none; }
+        .login_section .login_container footer .login .sign:hover {
+          background-color: #f96d00;
+          color: #ffff; }
+
+.signup_section {
+  background: #1e6262;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .signup_section .container {
+    width: 40%;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black;
+    border-radius: 10px;
+    min-height: 520px; }
+    .signup_section .container header {
+      width: 100%;
+      min-height: 12vh;
+      display: flex;
+      justify-content: center;
+      padding: 1.3em;
+      align-items: center; }
+      .signup_section .container header h1 {
+        color: #ffff;
+        padding: 7px 20px 7px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Segoe UI;
+        letter-spacing: 1px;
+        box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black; }
+    .signup_section .container main {
+      width: 100%;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column; }
+      .signup_section .container main .username {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: .9em .9em .2em .9em; }
+        .signup_section .container main .username .user {
+          border: none;
+          padding: .8em;
+          border-radius: 5px;
+          background-color: #1e6262;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          outline: none;
+          color: #ffff;
+          font-family: "Bungee Inline", cursive;
+          font-size: 16px;
+          font-family: Segoe UI;
+          font-weight: bold;
+          letter-spacing: 1px; }
+        .signup_section .container main .username .warn-user {
+          margin-left: 15px;
+          color: #580909;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .signup_section .container main .username .user::placeholder {
+          color: #ffff; }
+      .signup_section .container main .user:focus {
+        background-color: #f96d00;
+        color: #080707;
+        font-weight: bold;
+        color: #ffff; }
+      .signup_section .container main .email {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: .9em .9em .2em .9em; }
+        .signup_section .container main .email .mail {
+          border: none;
+          padding: .8em;
+          border-radius: 5px;
+          outline: none;
+          color: #ffff;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: #1e6262;
+          font-size: 16px;
+          font-family: Segoe UI;
+          font-weight: bold;
+          letter-spacing: 1px; }
+        .signup_section .container main .email .warn-mail {
+          margin-left: 15px;
+          color: #550000;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .signup_section .container main .email .mail::placeholder {
+          color: #ffff; }
+        .signup_section .container main .email .mail:focus {
+          background-color: #f96d00;
+          color: #080707;
+          font-weight: bold;
+          color: #ffff; }
+      .signup_section .container main .password {
+        flex: 1;
+        display: flex;
+        padding: .9em .9em .2em .9em;
+        flex-direction: column; }
+        .signup_section .container main .password .pass {
+          border: none;
+          padding: .8em;
+          color: #ffff;
+          border-radius: 5px;
+          outline: none;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: #1e6262;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: Segoe UI;
+          letter-spacing: 1px; }
+        .signup_section .container main .password .warn-pass {
+          margin-left: 15px;
+          color: #550000;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .signup_section .container main .password .pass::placeholder {
+          color: #ffff; }
+        .signup_section .container main .password .pass:focus {
+          background-color: #f96d00;
+          color: #080707;
+          font-weight: bold;
+          color: #ffff; }
+        .signup_section .container main .password .div1 {
+          width: 11px;
+          height: 12px;
+          border-top: 2px solid blue;
+          border-left: 2px solid blue;
+          transform: rotate(45deg);
+          border-radius: 240px; }
+        .signup_section .container main .password .div2 {
+          width: 20px;
+          border: 1px solid blue;
+          transform: rotate(45deg); }
+        .signup_section .container main .password .div3 {
+          width: 8px;
+          height: 12px;
+          border: 1px solid transparent; }
+      .signup_section .container main .confirm {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: .9em .9em .2em .9em; }
+        .signup_section .container main .confirm .con-pass {
+          border: none;
+          padding: .8em;
+          border-radius: 5px;
+          color: #ffff;
+          outline: none;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: #1e6262;
+          font-size: 16px;
+          font-family: Segoe UI;
+          font-weight: bold;
+          letter-spacing: 1px; }
+        .signup_section .container main .confirm .warn-con {
+          margin-left: 15px;
+          color: #550000;
+          font-family: Segoe UI;
+          font-weight: bold; }
+        .signup_section .container main .confirm .con-pass::placeholder {
+          color: #ffff; }
+        .signup_section .container main .confirm .con-pass:focus {
+          background-color: #f96d00;
+          color: #080707;
+          font-weight: bold;
+          color: #ffff; }
+    .signup_section .container footer {
+      width: 100%;
+      min-height: 20vh;
+      display: flex;
+      flex-direction: column; }
+      .signup_section .container footer .forget {
+        flex: 1.5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px; }
+        .signup_section .container footer .forget .check {
+          flex: 1;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .signup_section .container footer .forget .check .remember {
+            margin-left: 20px; }
+          .signup_section .container footer .forget .check label {
+            margin-left: 5px;
+            color: #ffff;
+            font-size: 14px;
+            font-family: Segoe UI; }
+        .signup_section .container footer .forget .for-pass {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          .signup_section .container footer .forget .for-pass a {
+            color: #f96d00;
+            font-family: Segoe UI;
+            font-size: 14px;
+            letter-spacing: 1px; }
+      .signup_section .container footer .login {
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .signup_section .container footer .login .sign {
+          font-size: 18px;
+          font-family: Segoe UI;
+          padding: 7px 15px 7px 15px;
+          box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+          letter-spacing: 1px;
+          border: 2px solid #f96d00;
+          color: #f96d00;
+          border-radius: 10px;
+          cursor: pointer;
+          font-weight: bold;
+          background-color: #1e6262;
+          outline: none; }
+        .signup_section .container footer .login .sign:hover {
+          background-color: #f96d00;
+          color: #ffff; }
+      .signup_section .container footer .account {
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .signup_section .container footer .account p {
+          color: #ffff;
+          font-size: 16px;
+          font-family: Segoe UI; }
+        .signup_section .container footer .account a {
+          color: #f96d00;
+          font-size: 18px;
+          letter-spacing: 1px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to right, black, #434343); }
+
+.interaction_header, .song_header {
+  width: 100%;
+  min-height: 10vh;
+  background: #ffff;
+  display: flex; }
+  .interaction_header .nav_icon, .song_header .nav_icon {
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: .4;
+    padding: 5px; }
+    .interaction_header .nav_icon .nav, .song_header .nav_icon .nav {
+      font-size: 30px;
+      cursor: pointer;
+      color: black;
+      margin-left: 10px; }
+  .interaction_header .header_navbar, .song_header .header_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 400px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    display: none; }
+    .interaction_header .header_navbar .list_container, .song_header .header_navbar .list_container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .interaction_header .header_navbar .list_container .cross, .song_header .header_navbar .list_container .cross {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: black;
+        position: absolute;
+        top: 4%;
+        left: 12%; }
+      .interaction_header .header_navbar .list_container .header_list, .song_header .header_navbar .list_container .header_list {
+        list-style: none;
+        margin-top: 10px;
+        padding: 30px; }
+      .interaction_header .header_navbar .list_container li, .song_header .header_navbar .list_container li {
+        font-size: 18px;
+        margin: 10px 10px 25px 30px;
+        font-family: Segoe UI;
+        font-weight: bold; }
+        .interaction_header .header_navbar .list_container li .fa, .song_header .header_navbar .list_container li .fa {
+          color: #ffff;
+          margin-right: 30px; }
+        .interaction_header .header_navbar .list_container li a, .song_header .header_navbar .list_container li a {
+          text-decoration: none;
+          color: #ffff; }
+  .interaction_header .logo, .song_header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .interaction_header .logo .logo_pic, .song_header .logo .logo_pic {
+      animation: animate 1s ease-in-out infinite; }
+
+@keyframes animate {
+  0% {
+    width: 25px;
+    height: 25px; }
+  100% {
+    width: 30px;
+    height: 30px; } }
+    .interaction_header .logo .logo_name, .song_header .logo .logo_name {
+      margin-left: 5px;
+      font-size: 18px;
+      color: #1e6262;
+      font-family: "Bungee Inline", cursive; }
+  .interaction_header .ul_list_second, .song_header .ul_list_second {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .interaction_header .ul_list_second .ul_list, .song_header .ul_list_second .ul_list {
+      display: flex;
+      padding: 10px;
+      list-style: none; }
+      .interaction_header .ul_list_second .ul_list li:nth-child(1) a, .song_header .ul_list_second .ul_list li:nth-child(1) a {
+        font-weight: bold; }
+      .interaction_header .ul_list_second .ul_list li, .song_header .ul_list_second .ul_list li {
+        font-family: Segoe UI;
+        margin: 0px 20px 0px 10px;
+        font-size: 18px; }
+        .interaction_header .ul_list_second .ul_list li a, .song_header .ul_list_second .ul_list li a {
+          text-decoration: none;
+          color: #a80038; }
+        .interaction_header .ul_list_second .ul_list li .fa, .song_header .ul_list_second .ul_list li .fa {
+          margin-right: 10px; }
+        .interaction_header .ul_list_second .ul_list li a:hover, .song_header .ul_list_second .ul_list li a:hover {
+          font-weight: bold; }
+  .interaction_header .social_icon, .song_header .social_icon {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .interaction_header .social_icon .fa, .song_header .social_icon .fa {
+      margin: 0px 20px 0px 10px;
+      font-size: 20px; }
+    .interaction_header .social_icon .fa:hover, .song_header .social_icon .fa:hover {
+      font-weight: bold; }
+    .interaction_header .social_icon .fa-instagram, .song_header .social_icon .fa-instagram {
+      color: #f96d00; }
+    .interaction_header .social_icon .fa-github-alt, .song_header .social_icon .fa-github-alt {
+      color: #1e6262; }
+    .interaction_header .social_icon .fa-facebook-square, .song_header .social_icon .fa-facebook-square {
+      color: #22b2da; }
+
+.interaction_section {
+  width: 100%;
+  min-height: 90vh;
+  background: url("image/tran.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  z-index: -1; }
+  .interaction_section .img {
+    position: fixed;
+    width: 100%;
+    height: 100%; }
+    .interaction_section .img .imag_pic {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 70vh; }
+      .interaction_section .img .imag_pic .sec {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0px 0px 10px;
+        animation: flute 5s linear infinite; }
+      .interaction_section .img .imag_pic .sec:nth-child(7) {
+        animation-delay: .2s; }
+      .interaction_section .img .imag_pic .sec:nth-child(6) {
+        animation-delay: .4s; }
+      .interaction_section .img .imag_pic .sec:nth-child(5) {
+        animation-delay: .6s; }
+      .interaction_section .img .imag_pic .sec:nth-child(4) {
+        animation-delay: 1s; }
+      .interaction_section .img .imag_pic .sec:nth-child(3) {
+        animation-delay: 1.5s; }
+      .interaction_section .img .imag_pic .sec:nth-child(2) {
+        animation-delay: 1.7s; }
+      .interaction_section .img .imag_pic .sec:nth-child(1) {
+        animation-delay: 1.9s; }
+
+@keyframes flute {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0; }
+  5% {
+    transform: translateY(-70px);
+    opacity: 1; }
+  15% {
+    transform: translateY(-100px);
+    opacity: 1;
+    width: 15px;
+    height: 15px; }
+  25% {
+    transform: translateY(-120px) translateX(10px);
+    opacity: 0; }
+  35% {
+    transform: translateY(-140px) translateX(20px);
+    opacity: 1;
+    width: 15px;
+    height: 15px; }
+  45% {
+    transform: translateY(-170px) translateX(30px);
+    opacity: 1; }
+  55% {
+    transform: translateY(-210px) translateX(50px);
+    width: 25px;
+    height: 25px;
+    opacity: 0; }
+  65% {
+    transform: translateY(-240px) translateX(60px);
+    opacity: 1;
+    width: 30px;
+    height: 30px; }
+  75% {
+    transform: translateY(-280px) translateX(70px);
+    opacity: 1; }
+  85% {
+    transform: translateY(-340px) translateX(80px);
+    opacity: 1; }
+  100% {
+    transform: translateY(-370px);
+    opacity: 0; } }
+  .interaction_section .media_icon, .interaction_section .song_media_icon {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .interaction_section .media_icon .social_icon, .interaction_section .song_media_icon .social_icon {
+      margin-right: 5px;
+      display: none; }
+      .interaction_section .media_icon .social_icon .fa, .interaction_section .song_media_icon .social_icon .fa {
+        margin: 0px 10px 0px 10px;
+        font-size: 18px; }
+      .interaction_section .media_icon .social_icon .fa:hover, .interaction_section .song_media_icon .social_icon .fa:hover {
+        font-weight: bold; }
+      .interaction_section .media_icon .social_icon .fa-instagram, .interaction_section .song_media_icon .social_icon .fa-instagram {
+        color: #ffff; }
+      .interaction_section .media_icon .social_icon .fa-github-alt, .interaction_section .song_media_icon .social_icon .fa-github-alt {
+        color: #ffff; }
+      .interaction_section .media_icon .social_icon .fa-facebook-square, .interaction_section .song_media_icon .social_icon .fa-facebook-square {
+        color: #ffff; }
+  .interaction_section .main_part {
+    flex: 6;
+    display: flex; }
+    .interaction_section .main_part .content_part {
+      flex: 3;
+      display: flex;
+      flex-direction: column; }
+      .interaction_section .main_part .content_part .head_content {
+        flex: 1;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        .interaction_section .main_part .content_part .head_content h1 {
+          font-family: Segoe UI;
+          text-shadow: -1px 1px 0px #ffff, 1px 1px 0px #ffff, 1px -1px 0px #ffff, -1px -1px 0px #ffff;
+          font-size: 30px;
+          margin-top: 30px; }
+        .interaction_section .main_part .content_part .head_content .logo_pic {
+          width: 30px;
+          height: 30px;
+          margin-left: 10px; }
+        .interaction_section .main_part .content_part .head_content h3 {
+          font-family: sans-serif;
+          margin-top: 10px;
+          font-size: 16px;
+          display: none;
+          color: #ffff; }
+
+@media screen and (max-width: 768px) {
+  .interaction_header .ul_list_second {
+    display: none; }
+  .interaction_section.img {
+    height: 30%; }
+  .interaction_section.main_part {
+    flex-direction: column; }
+  .interaction_section.main_part .content_part .head_content {
+    padding-bottom: 40px;
+    flex: 4; }
+  .interaction_section.main_part .content_part .head_content h1 {
+    font-size: 25px; }
+  .interaction_section.main_part .content_part .head_content h3 {
+    margin-top: 15px; }
+  .interaction_section.main_part .content_part .head_content .logo_pic {
+    width: 25px;
+    height: 25px; } }
+
+@media screen and (max-width: 575px) {
+  .interaction_header .header_navbar .list_container {
+    justify-content: center; }
+  .interaction_header .header_navbar {
+    width: 100%; }
+  .interaction_header .social_icon {
+    display: none; }
+  .interaction_header .logo {
+    justify-content: flex-end;
+    margin-right: 10px; }
+    .interaction_header .logo .logo_name {
+      font-size: 16px; }
+  .interaction_section .media_icon .social_icon {
+    display: block; }
+  .interaction_section.main_part .content_part .head_content h1 {
+    font-size: 20px; }
+  .interaction_section.main_part .content_part .head_content h1 .logo_pic {
+    width: 20px;
+    height: 20px; }
+  .interaction_section.main_part .content_part .head_content h3 {
+    font-size: 14px;
+    margin-top: 20px; }
+  .interaction_section.main_part .content_part .head_content {
+    flex: 6;
+    padding-bottom: 40px; }
+  .interaction_section.main_part .content_part .head_content ul li {
+    font-size: 10px; } }
+
+.song_header {
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
+  .song_header .ul_list_second .ul_list li:nth-child(1) a {
+    font-weight: normal; }
+  .song_header .ul_list_second .ul_list li:nth-child(2) a {
+    font-weight: bold; }
+  .song_header .ul_list_second .ul_list li a:hover {
+    font-weight: bold; }
+  .song_header .header_navbar {
+    z-index: 1; }
+    .song_header .header_navbar .list_container li:nth-child(2) .fa {
+      color: #a80038; }
+    .song_header .header_navbar .list_container li:nth-child(2) a {
+      color: #a80038; }
+
+.song_section {
+  display: flex;
+  min-height: 90vh;
+  width: 100%;
+  background: #1e6262;
+  margin-top: 10vh; }
+  .song_section .song_media_icon {
+    z-index: 9999;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    flex: 1;
+    background: #1e6262; }
+    .song_section .song_media_icon .social_icon {
+      padding-top: 10px; }
+      .song_section .song_media_icon .social_icon .fa {
+        margin: 0px 10px 0px 10px;
+        font-size: 18px; }
+      .song_section .song_media_icon .social_icon .fa:hover {
+        font-weight: bold; }
+      .song_section .song_media_icon .social_icon .fa-instagram {
+        color: #ffff; }
+      .song_section .song_media_icon .social_icon .fa-github-alt {
+        color: #ffff; }
+      .song_section .song_media_icon .social_icon .fa-facebook-square {
+        color: #ffff; }
+  .song_section .song_meter_box {
+    z-index: 1;
+    background: #1e6262;
+    min-height: 50vh;
+    width: 100%;
+    display: none;
+    position: fixed; }
+    
+    .song_section .song_meter_box .song_meter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh; }
+      .song_section .song_meter_box .song_meter .song_detail {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh; }
+        .song_section .song_meter_box .song_meter .song_detail .detail {
+          display: flex;
+          flex-direction: column;
+          padding: 10px; }
+          .song_section .song_meter_box .song_meter .song_detail .detail span {
+            display: flex;
+            padding: 5px; }
+            .song_section .song_meter_box .song_meter .song_detail .detail span p {
+              color: #f96d00;
+              font-family: Segoe UI;
+              font-size: 16px;
+              letter-spacing: 1px;
+              word-spacing: 2px;
+              font-weight: bold; }
+            .song_section .song_meter_box .song_meter .song_detail .detail span p:nth-child(2) {
+              color: #ffff;
+              margin-left: 10px; }
+      .song_section .song_meter_box .song_meter .loader_circle {
+        z-index: 1;
+        min-height: 50vh;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .song_section .song_meter_box .song_meter .loader_circle .left_bumper {
+          flex: 1;
+          z-index: 1;
+          min-height: 50vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .song_section .song_meter_box .song_meter .loader_circle .left_bumper .span {
+            width: 20px;
+            margin: 5px;
+            height: 70px;
+            background: linear-gradient(#a80038, #f96d00);
+            animation: music 1s linear infinite; }
+          .song_section .song_meter_box .song_meter .loader_circle .left_bumper .span:nth-child(1) {
+            animation-delay: .2s; }
+          .song_section .song_meter_box .song_meter .loader_circle .left_bumper .span:nth-child(2) {
+            animation-delay: .4s; }
+          .song_section .song_meter_box .song_meter .loader_circle .left_bumper .span:nth-child(3) {
+            animation-delay: .6s; }
+
+@keyframes music {
+  0% {
+    height: 125px; }
+  50% {
+    height: 30px; }
+  100% {
+    height: 125px; } }
+        .song_section .song_meter_box .song_meter .loader_circle .right_bumper {
+          flex: 1;
+          z-index: 1;
+          min-height: 50vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .song_section .song_meter_box .song_meter .loader_circle .right_bumper .span {
+            width: 20px;
+            margin: 5px;
+            height: 70px;
+            background: linear-gradient(#a80038, #f96d00);
+            animation: music 1s linear infinite; }
+          .song_section .song_meter_box .song_meter .loader_circle .right_bumper .span:nth-child(1) {
+            animation-delay: .2s; }
+          .song_section .song_meter_box .song_meter .loader_circle .right_bumper .span:nth-child(2) {
+            animation-delay: .4s; }
+          .song_section .song_meter_box .song_meter .loader_circle .right_bumper .span:nth-child(3) {
+            animation-delay: .6s; }
+
+@keyframes music {
+  0% {
+    height: 125px; }
+  50% {
+    height: 30px; }
+  100% {
+    height: 125px; } }
+        .song_section .song_meter_box .song_meter .loader_circle .loader {
+          width: 200px;
+          height: 200px;
+          background: #1e6262;
+          position: relative;
+          border-radius: 50%;
+          box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 5px rgba(255, 255, 255, 0.1), inset 10px 10px 10px rgba(0, 0, 0, 0.4); }
+          .song_section .song_meter_box .song_meter .loader_circle .loader span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: .2s;
+            background: linear-gradient(#a80038, #f96d00);
+            animation: glow 2s linear infinite; }
+
+@keyframes glow {
+  0% {
+    transform: rotate(0deg);
+    opacity: .5; }
+  50% {
+    transform: rotate(360deg);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+    filter: blur(10px); } }
+        .song_section .song_meter_box .song_meter .loader_circle .loader_two {
+          content: '';
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 5;
+          font-size: 30px;
+          top: 25px;
+          left: 25px;
+          right: 25px;
+          z-index: 10;
+          bottom: 25px;
+          border-radius: 50%;
+          background: #1e6262;
+          box-shadow: inset -10px -10px 5px rgba(255, 255, 255, 0.1), inset 15px 15px 15px rgba(0, 0, 0, 0.4); }
+          .song_section .song_meter_box .song_meter .loader_circle .loader_two img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; }
+
+.music_album_box {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black;
+  border-radius: 5px;
+  width: 95%;
+  margin-left: 20px;
+  margin-top: 10vh;
+  background-color: #135252; }
+  .music_album_box .music_album {
+    padding: 10px;
+    background-color: #0d4747;
+    box-shadow: 5px 5px 5px rgba(173, 170, 170, 0.2);
+    color: #22b2da;
+    box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; }
+    .music_album_box .music_album .music_image1 {
+      padding: 1em;
+      max-width: 250px;
+      box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black; }
+      .music_album_box .music_album .music_image1 img {
+        width: 100%;
+        height: 120px; }
+    .music_album_box .music_album .music_name {
+      padding: 10px 0px 0px 20px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .music_album_box .music_album .music_name p {
+        color: #f96d00;
+        font-family: Segoe UI;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: flex;
+        align-self: flex-start;
+        font-weight: bold; }
+      .music_album_box .music_album .music_name .play {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black;
+        border-radius: 50%;
+        background: #1e6262;
+        max-width: 60px;
+        min-height: 50px;
+        padding: .5em;
+        cursor: pointer; }
+        .music_album_box .music_album .music_name .play img {
+          width: 100%;
+          border-radius: 50%; }
+
+@media screen and (max-width: 768px) {
+  .song_header .ul_list_second {
+    display: none; } }
+
+@media screen and (max-width: 575px) {
+  .song_section .song_media_icon {
+    display: block;
+    position: fixed; }
+  .song_header .header_navbar .list_container {
+    justify-content: center; }
+  .song_header .header_navbar {
+    width: 100%; }
+  .song_header .social_icon {
+    display: none; }
+  .song_header .logo {
+    justify-content: flex-end;
+    margin-right: 10px; }
+    .song_header .logo .logo_name {
+      font-size: 16px; } }
